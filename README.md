@@ -1,0 +1,1 @@
+This repository is created as part of my Week 1 Git and GitHub assignment. The objective of this assignment is to understand and practice core version control concepts using Git and GitHub.
