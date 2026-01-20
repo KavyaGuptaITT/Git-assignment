@@ -1,0 +1,57 @@
+Q. What is Git?
+Ans. Git is a version control system used to track changes in code over time.
+
+Q. Why is Git required in software development?
+Ans. Git provides useful tools for software developers, especially when multiple developers are working on the same project. It helps track code changes properly and efficiently.
+
+Q. Difference between Git and GitHub.
+Ans. Git is a version control system, while gitHub is a platform that acts as a single source of truth for collaborators and hosts git repositories.
+
+Q. What is a repository?
+Ans. A repository is similar to a folder in which all files and folders are tracked by git.
+
+Q. What is version control?
+Ans. Version control is used to track changes that occur during software development, helping maintain code properly and efficiently.
+
+Q. Install Git on your system.
+Ans. We can directly install Git from its website for windows as well as for mac systems.
+
+Q. Verify the installation.
+Ans. To verify the Git installation we can go to our command line and type git -v or just git.
+
+Q. Configure Git with your name and email.
+Ans . First thing that we should do on Git is to tell Git who are we that is our username and email. We can configure our mail and name using commands like "git config --global user.name "<USERNAME>"" and "git config --global user.email "<EMAIL>"".
+
+Q. Difference between soft reset, mixed reset, and hard reset.
+Ans. Reset is used to go back to previous commits and remove commit history.
+Soft reset: Keeps the files in the staging area and leaves the working directory unchanged.
+Example: You committed with a wrong message. This command removes the commit but keeps all changes staged, so you can recommit with a correct message.
+
+Mixed reset: Removes the files from the staging area but keeps them in the working directory.
+Example: You want to re-check files before committing again. The commit is removed, files stay in working directory but are unstaged.
+
+Hard reset: Removes the files from both the staging area and the working directory.
+Example: You want to completely discard the last commit and its changes. Both commit and file changes are permanently removed.
+
+Q. Check the configured details.
+Ans. To check the configured details we can pass the command "git config --global user.name" for user name and "git config --global user.email". 
+
+Q. Difference between reset and revert.
+Ans. Reset is used to move back to previous commits, while revert is used to undo a specific commit while keeping the rest of the commits unchanged.
+Example: In a shared branch, we can undo a buggy commit safely. Revert creates a new commit, while reset rewrites history and can cause conflicts.
+
+Q. When should revert be preferred over reset?
+Ans. Revert should be preferred when we want to keep all other changes but undo a particular commit.
+Example: Code is already pushed to main. Instead of resetting, we can revert the faulty commit to safely undo it.
+
+Q. What is cherry-pick in Git?
+Ans. Cherry-pick is used when we want to apply a specific commit from one branch to another.
+Example: A single bug-fix commit from another branch is urgently needed. Cherry-pick applies only that commit without merging the full branch.
+
+Q. When should cherry-pick be avoided?
+Ans. Cherry-pick should be avoided when we need multiple commits from another branch.
+Example: If a feature branch has 10 related commits, cherry-picking them one by one creates duplicate history.
+
+Q. What problems can arise if cherry-pick is overused?
+Ans. If cherry-pick is overused, the commit history becomes cluttered and harder to understand.
+Example: Same changes appear with different commit IDs across branches, making history confusing and increasing chances of conflicts.
